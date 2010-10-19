@@ -19,6 +19,8 @@ TukuiShift:SetMovable(true)
 TukuiShift:SetUserPlaced(true)
 local ssmove = false
 local function showmovebutton()
+  -- don't allow moving while in combat
+  if InCombatLockdown() then print(ERR_NOT_IN_COMBAT) return end
 	if ssmove == false then
 		ssmove = true
 		ssmover:SetAlpha(1)
