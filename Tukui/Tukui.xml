@@ -78,6 +78,7 @@
 	<Script file="datatext\power.lua"/>
 	<Script file="datatext\time.lua"/>
 	<Script file="datatext\zone.lua"/>
+	<Script file="datatext\currency.lua"/>
 	
 	<Script file="actionbars\Hide.lua"/>
 	<Script file="actionbars\Bar1.lua"/>
