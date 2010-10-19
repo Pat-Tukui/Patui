@@ -120,10 +120,10 @@ TukuiCF["datatext"] = {
 	["power"] = 7,                         -- show your attackpower/spellpower/healpower/rangedattackpower whatever stat is higher gets displayed
 	["haste"] = 0,                         -- show your haste rating on panels.
 	["crit"] = 0,                          -- show your crit rating on panels.
-	["avd"] = 10,                          -- show your current avoidance against the level of the mob your targeting
+	["avd"] = 0,                           -- show your current avoidance against the level of the mob your targeting
 	["armor"] = 9,                         -- show your armor value against the level mob you are currently targeting
 	["zone"] = 5,                          -- shows your location
-	["currency"] = 0,                      -- show your tracked currency on panels
+	["currency"] = 10,                     -- show your tracked currency on panels
  
 	["battleground"] = true,               -- enable 3 stats in battleground only that replace stat1,stat2,stat3.
 	["time24"] = true,                     -- set time to 24h format.
