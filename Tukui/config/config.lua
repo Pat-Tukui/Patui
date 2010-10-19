@@ -75,7 +75,7 @@ TukuiCF["actionbar"] = {
 	["bottomrows"] = 2,                    -- numbers of row you want to show at the bottom (select between 1 and 2 only)
 	["rightbars"] = 1,                     -- numbers of right bar you want
 	["showgrid"] = true,                   -- show grid on empty button
-	["splitbar"] = false,                   -- bar
+	["splitbar"] = true,                   -- bar
 
 }
 
