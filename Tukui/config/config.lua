@@ -73,9 +73,9 @@ TukuiCF["actionbar"] = {
 	["hotkey"] = true,                     -- enable hotkey display because it was a lot requested
 	["hideshapeshift"] = false,            -- hide shapeshift or totembar because it was a lot requested.
 	["bottomrows"] = 2,                    -- numbers of row you want to show at the bottom (select between 1 and 2 only)
-	["rightbars"] = 0,                     -- numbers of right bar you want
+	["rightbars"] = 1,                     -- numbers of right bar you want
 	["showgrid"] = true,                   -- show grid on empty button
-	["splitbar"] = true,                   -- bar
+	["splitbar"] = false,                   -- bar
 
 }
 
