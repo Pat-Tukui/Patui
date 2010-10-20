@@ -63,7 +63,7 @@ GuildInstanceDifficulty:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 0, 0)
 
 local function UpdateLFG()
 	MiniMapLFGFrame:ClearAllPoints()
-	MiniMapLFGFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", TukuiDB.Scale(2), TukuiDB.Scale(1))
+	MiniMapLFGFrame:SetPoint("TOPLEFT", Minimap, "TOPLEFT", TukuiDB.Scale(2), TukuiDB.Scale(1))
 	MiniMapLFGFrameBorder:Hide()
 end
 hooksecurefunc("MiniMapLFG_UpdateIsShown", UpdateLFG)

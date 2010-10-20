@@ -29,7 +29,7 @@ hooksecurefunc("GameTooltip_SetDefaultAnchor", function(self, parent)
 		self:SetOwner(parent, "ANCHOR_CURSOR")
 	else
 		self:SetOwner(parent, "ANCHOR_NONE")
-		self:SetPoint("BOTTOMRIGHT", TukuiInfoRight, "TOPRIGHT", 0, TukuiDB.Scale(5))
+		self:SetPoint("BOTTOM", Minimap, "TOP", 0, TukuiDB.Scale(5))
 	end
 	self.default = 1
 end)
