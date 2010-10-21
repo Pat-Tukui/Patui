@@ -105,9 +105,15 @@ local function Shared(self, unit)
 
 		-- power
 		local power = CreateFrame('StatusBar', nil, self)
-		power:SetHeight(TukuiDB.Scale(5))
-		power:SetPoint("TOPLEFT", health, "BOTTOMLEFT", 0, TukuiDB.Scale(-3))
-		power:SetPoint("TOPRIGHT", health, "BOTTOMRIGHT", 0, TukuiDB.Scale(-3))
+		power:SetHeight(TukuiDB.Scale(25))
+		if unit == "player" then
+		    power:SetPoint("TOPLEFT", health, "BOTTOMLEFT", 7, TukuiDB.Scale(16))
+		    power:SetPoint("TOPRIGHT", health, "BOTTOMRIGHT", 7, TukuiDB.Scale(16))
+		else
+		    power:SetPoint("TOPLEFT", health, "BOTTOMLEFT", -7, TukuiDB.Scale(16))
+		    power:SetPoint("TOPRIGHT", health, "BOTTOMRIGHT", -7, TukuiDB.Scale(16))
+		end	
+		power:SetFrameStrata("LOW")
 		power:SetStatusBarTexture(normTex)
 		
 		-- power border
@@ -116,7 +122,6 @@ local function Shared(self, unit)
 		powerborder:ClearAllPoints()
 		powerborder:SetPoint("TOPLEFT", power, TukuiDB.Scale(-2), TukuiDB.Scale(2))
 		powerborder:SetPoint("BOTTOMRIGHT", power, TukuiDB.Scale(2), TukuiDB.Scale(-2))
-		powerborder:SetFrameStrata("MEDIUM")
 		
 		local powerBG = power:CreateTexture(nil, 'BORDER')
 		powerBG:SetAllPoints(power)
@@ -1195,7 +1200,7 @@ oUF:RegisterStyle('Tukz', Shared)
 if TukuiCF.layout.healer == false then
 -- player
 local player = oUF:Spawn('player', "oUF_Tukz_player")
-player:SetPoint("BOTTOMLEFT", TukuiActionBarBackground, "TOPLEFT", -2, 65)
+player:SetPoint("BOTTOMLEFT", TukuiActionBarBackground, "TOPLEFT", -15, 65)
 player:SetSize(TukuiDB.Scale(186), TukuiDB.Scale(32))
 
 -- focus
@@ -1205,7 +1210,7 @@ focus:SetSize(TukuiInfoRight:GetWidth() - TukuiDB.Scale(4), TukuiInfoRight:GetHe
 
 -- target
 local target = oUF:Spawn('target', "oUF_Tukz_target")
-target:SetPoint("BOTTOMRIGHT", TukuiActionBarBackground, "TOPRIGHT", 2, 65)
+target:SetPoint("BOTTOMRIGHT", TukuiActionBarBackground, "TOPRIGHT", 15, 65)
 target:SetSize(TukuiDB.Scale(186), TukuiDB.Scale(32))
 
 -- tot
