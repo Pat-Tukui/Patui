@@ -125,7 +125,7 @@ TukuiCF["datatext"] = {
 	["zone"] = 5,                          -- shows your location
 	["currency"] = 10,                     -- show your tracked currency on panels
  
-	["battleground"] = true,               -- enable 3 stats in battleground only that replace stat1,stat2,stat3.
+	["battleground"] = false,               -- enable 3 stats in battleground only that replace stat1,stat2,stat3.
 	["time24"] = false,                     -- set time to 24h format.
 	["localtime"] = true,                 -- set time to local time instead of server time.
 	["fontsize"] = 12,                     -- font size for panels.

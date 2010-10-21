@@ -26,7 +26,7 @@ local function setup()
 	elseif TukuiCF.actionbar.rightbars == 1 then
 		TukuiWatchFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", TukuiDB.Scale(-100), TukuiDB.Scale(-300))
 	else
-		TukuiWatchFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", TukuiDB.Scale(10), TukuiDB.Scale(-300))
+		TukuiWatchFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", TukuiDB.Scale(-30), TukuiDB.Scale(-300))
 	end
 	
 	local screenheight = GetScreenHeight()
