@@ -79,7 +79,7 @@ end
 
 --CASTBAR
 local castbar = CreateFrame("Frame", "Castbar", barbg)
-TukuiDB.CreatePanel(castbar, 376, 30, "BOTTOM", barbg, "TOP", 0, TukuiDB.Scale(3))
+TukuiDB.CreatePanel(castbar, 576, 30, "BOTTOM", barbg, "TOP", 0, TukuiDB.Scale(3))
 Castbar:SetAlpha(0)
 
 -- CHAT BG LEFT

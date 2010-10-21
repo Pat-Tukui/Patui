@@ -28,8 +28,14 @@ hooksecurefunc("GameTooltip_SetDefaultAnchor", function(self, parent)
 	if db.cursor == true then
 		self:SetOwner(parent, "ANCHOR_CURSOR")
 	else
-		self:SetOwner(parent, "ANCHOR_NONE")
-		self:SetPoint("BOTTOM", Minimap, "TOP", 0, TukuiDB.Scale(5))
+		-- avoids flicker when mouseover unitframes with open bags
+		if TukuiCF["bags"].enable == true and StuffingFrameBags:IsShown() then
+			self:ClearAllPoints()
+			self:SetPoint("BOTTOMRIGHT", StuffingFrameBags, "TOPRIGHT", 0, TukuiDB.Scale(4))
+		else
+			self:ClearAllPoints()
+			self:SetPoint("BOTTOMRIGHT", TukuiInfoRight, "TOPRIGHT", 0, TukuiDB.Scale(5))
+		end
 	end
 	self.default = 1
 end)
@@ -43,9 +49,10 @@ GameTooltip:HookScript("OnUpdate",function(self, ...)
 		self:SetBackdropBorderColor(unpack(TukuiCF.media.bordercolor))
 	elseif self:GetAnchorType() == "ANCHOR_NONE" then
 		if InCombatLockdown() and db.hidecombat == true then
-			self:SetAlpha(0)
+			self:Hide()
 		else
 			self:SetAlpha(1)
+			-- moves tooltip when opening bags
 			if TukuiCF["bags"].enable == true and StuffingFrameBags:IsShown() then
 				self:ClearAllPoints()
 				self:SetPoint("BOTTOMRIGHT", StuffingFrameBags, "TOPRIGHT", 0, TukuiDB.Scale(3))
