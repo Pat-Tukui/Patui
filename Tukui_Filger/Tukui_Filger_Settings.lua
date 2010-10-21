@@ -1,16 +1,16 @@
 Filger_Settings = {
-	configmode = false,
+	configmode = falsea,
 }
 
 --[[ CD-Example
 		{
 			Name = "COOLDOWN",
 			Direction = "RIGHT",
-			Interval = 3,
+			Interval = 4,
 			Mode = "ICON",
 			setPoint = { "CENTER", UIParent, "CENTER", 0, -100 },
-			
-			-- Wild Growth
+
+			-- Wild Growth/Wildwuchs
 			{ spellID = 48438, size = 32, filter = "CD" },
 		},
 ]]
@@ -25,13 +25,13 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, 24 },
 
-			--Lifebloom
+			-- Lifebloom/Blühendes Leben
 			{ spellID = 33763, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Rejuvenation
+			-- Rejuvenation/Verjüngung
 			{ spellID = 774, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Regrowth
+			-- Regrowth/Nachwachsen
 			{ spellID = 8936, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Wild Growth/Wildwuchs
+			-- Wild Growth/Wildwuchs
 			{ spellID = 48438, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
@@ -42,13 +42,13 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 24 },
 
-			--Lifebloom
+			-- Lifebloom/Blühendes Leben
 			{ spellID = 33763, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			--Rejuvenation
+			-- Rejuvenation/Verjüngung
 			{ spellID = 774, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			--Regrowth
+			-- Regrowth/Nachwachsen
 			{ spellID = 8936, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			--Wild Growth/Wildwuchs
+			-- Wild Growth/Wildwuchs
 			{ spellID = 48438, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 		},
 		{
@@ -58,40 +58,24 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
 
-			-- Eclipse (Lunar)
+			-- Eclipse (Lunar)/Mondfinsternis
 			{ spellID = 48518, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Eclipse (Solar)
+			-- Eclipse (Solar)/Sonnenfinsternis
 			{ spellID = 48517, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Shooting Stars
+			-- Shooting Stars/Sternschnuppen
 			{ spellID = 93400, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Clearcasting
-			{ spellID = 16870, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Essence of Life
-			{ spellID = 60062, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Siphoned Power
-			{ spellID = 71636, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Hyperspeed Accelerators
-			{ spellID = 54999, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Cultivated Power
-			{ spellID = 71572, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Hardened Skin
-			{ spellID = 71586, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Savage roar
+			-- Savage Roar/Wildes Brüllen
 			{ spellID = 52610, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Innervate
-			{ spellID = 29166, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
-			-- Barkskin
-			{ spellID = 22812, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Bloodlust
-			{ spellID = 2825, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
-			-- Heroism
-			{ spellID = 32182, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
-			-- Survival Instincts
+			-- Survival Instincts/Überlebensinstinkte
 			{ spellID = 61336, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Hyperspeed Accelerators
-			{ spellID = 54999, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Tree of Life
+			-- Tree of Life/Baum des Lebens
 			{ spellID = 33891, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Clearcasting/Freizaubern
+			{ spellID = 16870, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Innervate/Anregen
+			{ spellID = 29166, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Barkskin/Baumrinde
+			{ spellID = 22812, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -100,41 +84,46 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
 
-			-- Moonfire
-			{ spellID = 8921, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Sunfire
-			{ spellID = 93402, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Insect Swarm
-			{ spellID = 5570, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Faerie Fire
-			{ spellID = 770, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
-			-- Entangling Roots
+			-- Hibernate/Winterschlaf
+			{ spellID = 2637, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Entangling Roots/Wucherwurzeln
 			{ spellID = 339, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
-			-- Earth and Moon
-			{ spellID = 48506, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Rake
+			-- Cyclone/Wirbelsturm
+			{ spellID = 33786, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Moonfire/Mondfeuer
+			{ spellID = 8921, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- Sunfire/Sonnenfeuer
+			{ spellID = 93402, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- Insect Swarm/Insektenschwarm
+			{ spellID = 5570, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- Rake/Krallenhieb
 			{ spellID = 1822, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Rip
+			-- Rip/Zerfetzen
 			{ spellID = 1079, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Lacerate
+			-- Lacerate/Aufschlitzen
 			{ spellID = 33745, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Pounce Bleed
+			-- Pounce Bleed/Anspringblutung
 			{ spellID = 9007, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Mangle (Cat)
-			{ spellID = 33876, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Mangle/Zerfleischen
+			{ spellID = 33876, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- Earth and Moon/Erde und Mond
+			{ spellID = 48506, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- Faerie Fire/Feenfeuer
+			{ spellID = 770, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 		},
 		{
 			Name = "F/DEBUFF_BAR",
 			Direction = "UP",
+			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
 
-			--Hibernate/Winterschlaf
+			-- Hibernate/Winterschlaf
 			{ spellID = 2637, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
-			--Entangling Roots/Wucherwurzeln
+			-- Entangling Roots/Wucherwurzeln
 			{ spellID = 339, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
-			--Cyclone/Wirbelsturm
+			-- Cyclone/Wirbelsturm
 			{ spellID = 33786, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
@@ -145,51 +134,27 @@ Filger_Spells = {
 			Interval = 4,
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
-			
+
 			-- Lock and Load
 			{ spellID = 56342, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Fury of the Five Flights
 			{ spellID = 60314, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Greatness
-			{ spellID = 60233, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Mjolnir Runestone
-			{ spellID = 65019, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Quick Shots
 			--{ spellID = 6150, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Master Tactician
 			{ spellID = 34837, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Master Tactician
+			-- Improved Steady Shot/Verbesserter zuverlässiger Schuss
 			{ spellID = 53224, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Expose Weakness
 			--{ spellID = 34503, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Exploit Weakness 2t10 proc
-			{ spellID = 70728, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Stinger 4t10 proc
-			{ spellID = 71007, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Power of the Taunka
-			{ spellID = 71486, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Aim of the Iron Dwarves
-			{ spellID = 71491, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Agility of the Vrykul
-			{ spellID = 71485, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Icy Rage
-			{ spellID = 71401, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Rapid Fire
 			{ spellID = 3045, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Berserking
-			{ spellID = 26297, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Potion of Speed
-			{ spellID = 53908, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Potion of Wild Magic
-			{ spellID = 53909, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Blood Fury
-			{ spellID = 20572, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Call of the Wild
 			{ spellID = 53434, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Hyperspeed Acceleration
-			{ spellID = 54758, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Frostforged Champion
-			{ spellID = 72412, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Mend Pet/Tier heilen
+			{ spellID = 136, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
+			-- Feed Pet/Tier füttern
+			{ spellID = 6991, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -197,9 +162,11 @@ Filger_Spells = {
 			Interval = 4,
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
-			
-			-- Hunter's Mark
-			{ spellID = 1130, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+
+			-- Wyvern Sting
+			{ spellID = 19386, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Silencing Shot
+			{ spellID = 34490, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Serpent Sting
 			{ spellID = 1978, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Scorpid Sting
@@ -208,32 +175,22 @@ Filger_Spells = {
 			{ spellID = 3674, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Explosive Shot
 			{ spellID = 53301, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			
+			-- Hunter's Mark
+			{ spellID = 1130, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+
 		},
 		{
 			Name = "F/DEBUFF_BAR",
 			Direction = "UP",
+			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
-			
-			-- Wyvern Sting
-			{ spellID = 19386, size = 32, barWidth = 200, unitId = "focus", caster = "player", filter = "DEBUFF" },
-			-- Silencing Shot
-			{ spellID = 34490, size = 32, barWidth = 200, unitId = "focus", caster = "player", filter = "DEBUFF" },
-		},
-		{
-			Name = "PET_ICON",
-			Direction = "UP",
-			Interval = 4,
-			Opacity = 1,
-			Mode = "ICON",
-			setPoint = { "CENTER", UIParent, 0, -300 },
 
-			--Mend Pet/Tier heilen
-			{ spellID = 136, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
-			--Feed Pet/Tier f�ttern
-			{ spellID = 6991, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
+			-- Wyvern Sting
+			{ spellID = 19386, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
+			-- Silencing Shot
+			{ spellID = 34490, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
 	["MAGE"] = {
@@ -243,7 +200,7 @@ Filger_Spells = {
 			Interval = 4,
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
-			
+
 			-- Frostbite
 			--{ spellID = 11071, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Winter's Chill
@@ -260,10 +217,6 @@ Filger_Spells = {
 			{ spellID = 12536, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Impact
 			{ spellID = 12358, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Greatness
-			{ spellID = 60234, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Essence of Life
-			{ spellID = 60062, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -271,7 +224,9 @@ Filger_Spells = {
 			Interval = 4,
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
-			
+
+			-- Polymorph
+			{ spellID = 118, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Arcane Blast
 			{ spellID = 36032, size = 47, unitId = "player", caster = "player", filter = "DEBUFF" },
 			-- Improved Scorch
@@ -290,12 +245,13 @@ Filger_Spells = {
 		{
 			Name = "F/DEBUFF_BAR",
 			Direction = "UP",
+			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
-			
+
 			-- Polymorph
-			{ spellID = 118, size = 32, barWidth = 191, unitId = "focus", caster = "player", filter = "DEBUFF" },
+			{ spellID = 118, size = 32, barWidth = 191, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
 	["WARRIOR"] = {
@@ -312,14 +268,6 @@ Filger_Spells = {
 			{ spellID = 46916, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
 			-- Sword and Board
 			{ spellID = 50227, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Greatness
-			{ spellID = 60229, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Strength of the Taunka
-			{ spellID = 71561, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Speed of the Vrykul
-			{ spellID = 71560, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Aim of the Iron Dwarves
-			{ spellID = 71559, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Blood Reserve
 			{ spellID = 64568, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Last Stand
@@ -364,13 +312,13 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, 24 },
 
-			--Earth Shield/Erdschild
+			-- Earth Shield/Erdschild
 			{ spellID = 974, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Riptide/Springflut
+			-- Riptide/Springflut
 			{ spellID = 61295, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Lightning Shield/Blitzschlagschild
+			-- Lightning Shield/Blitzschlagschild
 			{ spellID = 324, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Water Shield/Wasserschild
+			-- Water Shield/Wasserschild
 			{ spellID = 52127, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
@@ -380,9 +328,9 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 24 },
 
-			--Earth Shield/Erdschild
+			-- Earth Shield/Erdschild
 			{ spellID = 974, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			--Riptide/Springflut
+			-- Riptide/Springflut
 			{ spellID = 61295, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 		},
 		{
@@ -394,14 +342,12 @@ Filger_Spells = {
 
 			-- Maelstorm Weapon
 			{ spellID = 53817, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Shamanistic rage
+			-- Shamanistic Rage
 			{ spellID = 30823, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Clearcasting
-			{ spellID = 12536, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 16246, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Tidal Waves
 			{ spellID = 51562, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Essence of Life
-			{ spellID = 60062, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Ancestral Fortitude
 			{ spellID = 16236, size = 47, barWidth = 187, unitId = "target", caster = "player", filter = "BUFF" },
 		},
@@ -412,6 +358,8 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
 
+			-- Hex
+			{ spellID = 51514, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Storm Strike
 			{ spellID = 17364, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Earth Shock
@@ -424,12 +372,13 @@ Filger_Spells = {
 		{
 			Name = "F/DEBUFF_BAR",
 			Direction = "UP",
+			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
-			
+
 			-- Hex
-			{ spellID = 51514, size = 32, barWidth = 191, unitId = "focus", caster = "player", filter = "DEBUFF" },
+			{ spellID = 51514, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
 	["PALADIN"] = {
@@ -441,7 +390,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, 24 },
 
-			--Beacon of Light/Flamme des Glaubens
+			-- Beacon of Light/Flamme des Glaubens
 			{ spellID = 53563, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
@@ -452,7 +401,7 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 24 },
 
-			--Beacon of Light/Flamme des Glaubens
+			-- Beacon of Light/Flamme des Glaubens
 			{ spellID = 53563, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 		},
 		{
@@ -482,8 +431,8 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
 
-			-- Hammer of Justice
-			{ spellID = 853, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- Hammer of Justice/Hammer der Gerechtigkeit
+			{ spellID = 853, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Judgement of Light
 			{ spellID = 20271, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Judgement of Justice
@@ -498,12 +447,13 @@ Filger_Spells = {
 		{
 			Name = "F/DEBUFF_BAR",
 			Direction = "UP",
+			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
 
-			--Hammer of Justice/Hammer der Gerechtigkeit
-			{ spellID = 853, size = 32, barWidth = 200, unitId = "focus", caster = "player", filter = "DEBUFF" },
+			-- Hammer of Justice/Hammer der Gerechtigkeit
+			{ spellID = 853, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
 	["PRIEST"] = {
@@ -514,21 +464,21 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, 24 },
 
-			--Prayer of Mending/Gebet der Besserung
+			-- Prayer of Mending/Gebet der Besserung
 			{ spellID = 41637, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Guardian Spirit/Schutzgeist
+			-- Guardian Spirit/Schutzgeist
 			{ spellID = 47788, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Pain Suppression/Schmerzunterdr�ckung
+			-- Pain Suppression/Schmerzunterdrückung
 			{ spellID = 33206, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Power Word: Shield/Machtwort: Schild
+			-- Power Word: Shield/Machtwort: Schild
 			{ spellID = 17, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Renew/Erneuerung
+			-- Renew/Erneuerung
 			{ spellID = 139, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Fade/Verblassen
+			-- Fade/Verblassen
 			{ spellID = 586, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Fear Ward/Furchtzauberschutz
+			-- Fear Ward/Furchtzauberschutz
 			{ spellID = 6346, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			--Inner Fire/Inneres Feuer
+			-- Inner Fire/Inneres Feuer
 			{ spellID = 588, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
@@ -538,17 +488,17 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 24 },
 
-			--Prayer of Mending/Gebet der Besserung
+			-- Prayer of Mending/Gebet der Besserung
 			{ spellID = 41637, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			--Guardian Spirit/Schutzgeist
+			-- Guardian Spirit/Schutzgeist
 			{ spellID = 47788, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			--Pain Suppression/Schmerzunterdr�ckung
+			-- Pain Suppression/Schmerzunterdrückung
 			{ spellID = 33206, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			--Power Word: Shield/Machtwort: Schild
+			-- Power Word: Shield/Machtwort: Schild
 			{ spellID = 17, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			--Renew/Erneuerung
+			-- Renew/Erneuerung
 			{ spellID = 139, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			--Fear Ward/Furchtzauberschutz
+			-- Fear Ward/Furchtzauberschutz
 			{ spellID = 6346, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 		},
 		{
@@ -562,28 +512,18 @@ Filger_Spells = {
 			{ spellID = 33151, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
 			-- Serendipity
 			{ spellID = 63730, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Greatness
-			{ spellID = 60234, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Essence of Life
-			{ spellID = 60062, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Energized
-            { spellID = 67696, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-            -- Frostforged Sage
-            { spellID = 72416, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-            -- Shadow Weaving
-            --{ spellID = 15258, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-            -- Improved Spirit Tap
-           -- { spellID = 59000, size = 37, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Shadow Weaving
+			--{ spellID = 15258, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Improved Spirit Tap
+			-- { spellID = 59000, size = 37, unitId = "player", caster = "all", filter = "BUFF" },
 			-- Shadow Orb
 			{ spellID = 77487, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Archangel
 			{ spellID = 81700, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Evangelism
 			{ spellID = 81661, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Hand of Protection
-            { spellID = 1022, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
-            -- Dispersion
-            { spellID = 47585, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Dispersion
+			{ spellID = 47585, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -591,25 +531,30 @@ Filger_Spells = {
 			Interval = 4,
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
-			
+
+			-- Shackle undead
+			{ spellID = 9484, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Psychic Scream
+			{ spellID = 8122, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Shadow Word: Pain
 			{ spellID = 589, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Devouring Plague
 			{ spellID = 2944, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Vampiric Touch
-            { spellID = 34914, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			{ spellID = 34914, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 		},
 		{
 			Name = "F/DEBUFF_BAR",
 			Direction = "UP",
+			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
-			
+
 			-- Shackle undead
-			{ spellID = 9484, size = 32, barWidth = 200, unitId = "focus", caster = "player", filter = "DEBUFF" },
+			{ spellID = 9484, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 			-- Psychic Scream
-			{ spellID = 8122, size = 32, barWidth = 200, unitId = "focus", caster = "player", filter = "DEBUFF" },
+			{ spellID = 8122, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
 	["WARLOCK"] = {
@@ -620,8 +565,10 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
 
-			-- Essence of Life
-			{ spellID = 60062, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			--Devious Minds/Teuflische Absichten
+			{ spellID = 70840, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Improved Soul Fire
+			{ spellID = 85114, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Molten Core
 			{ spellID = 47383, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Decimation
@@ -644,12 +591,12 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
 
+			-- Fear
+			{ spellID = 5782, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Banish
+			{ spellID = 710, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Curse of the Elements
 			{ spellID = 1490, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
-			-- Ebon Plaguebringer
-			{ spellID = 51099, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
-			-- Earth and Moon
-			{ spellID = 48506, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Curse of Tongues
 			{ spellID = 1714, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Curse of Exhaustion
@@ -669,23 +616,13 @@ Filger_Spells = {
 			-- Unstable Affliction
 			{ spellID = 30108, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Haunt
-			{ spellID = 48181, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },	
+			{ spellID = 48181, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Seed of Corruption
 			{ spellID = 27243, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Curse of Weakness
-			{ spellID = 702, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Curse of Tongues
-			{ spellID = 1714, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Curse of Exhaustion
-			{ spellID = 18223, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Fear
-			{ spellID = 5782, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Howl of Terror
 			{ spellID = 5484, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Death Coil
 			{ spellID = 6789, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Banish
-			{ spellID = 710, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Enslave Demon
 			{ spellID = 1098, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Demon Charge
@@ -694,24 +631,25 @@ Filger_Spells = {
 		{
 			Name = "F/DEBUFF_BAR",
 			Direction = "UP",
+			IconSide = "RIGHT",
 			Interval = 4,
 			Mode = "BAR",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
-			
+
 			-- Fear
-			{ spellID = 5782, size = 32, barWidth = 200, unitId = "focus", caster = "player", filter = "DEBUFF" },
+			{ spellID = 5782, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 			-- Banish
-			{ spellID = 710, size = 32, barWidth = 200, unitId = "focus", caster = "player", filter = "DEBUFF" },
+			{ spellID = 710, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
-	["ROGUE"] = {	
-		{	
+	["ROGUE"] = {
+		{
 			Name = "P_BUFF_ICON",
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
-			
+
 			-- Sprint
 			{ spellID = 2983, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Cloak of Shadows
@@ -719,15 +657,15 @@ Filger_Spells = {
 			-- Adrenaline Rush
 			{ spellID = 13750, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Evasion
-			{ spellID = 5277, size = 47, unitId = "player", caster = "player", filter = "BUFF" },	
+			{ spellID = 5277, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Envenom
 			{ spellID = 32645, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Overkill
 			{ spellID = 58426, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Slice and Dice
-			{ spellID = 5171, size = 47, unitId = "player", caster = "player", filter = "BUFF" },		
+			{ spellID = 5171, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Tricks of the Trade
-			{ spellID = 57934, size = 47, unitId = "player", caster = "player", filter = "BUFF" },		
+			{ spellID = 57934, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Turn the Tables
 			{ spellID = 51627, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
@@ -737,21 +675,21 @@ Filger_Spells = {
 			Interval = 4,
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
-			
+
+			-- Cheap shot
+			{ spellID = 1833, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Kidney shot
+			{ spellID = 408, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Blind
+			{ spellID = 2094, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Sap
+			{ spellID = 6770, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Rupture
 			{ spellID = 1943, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Garrote
 			{ spellID = 703, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Kidney shot
-			{ spellID = 408, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Gouge
 			{ spellID = 1776, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Cheap shot
-			{ spellID = 1833, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Blind
-			{ spellID = 2094, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Sap
-			{ spellID = 6770, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Expose Armor
 			{ spellID = 8647, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Dismantle
@@ -759,7 +697,7 @@ Filger_Spells = {
 			-- Deadly Poison
 			{ spellID = 2818, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Mind-numbing Poison
-			{ spellID = 5760, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },		
+			{ spellID = 5760, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Crippling Poison
 			{ spellID = 3409, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Wound Poison
@@ -768,12 +706,15 @@ Filger_Spells = {
 		{
 			Name = "F/DEBUFF_BAR",
 			Direction = "UP",
+			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
-			
+
 			-- Blind
-			{ spellID = 2094, size = 32, barWidth = 200, unitId = "focus", caster = "player", filter = "DEBUFF" },
+			{ spellID = 2094, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
+			-- Sap
+			{ spellID = 6770, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
 	["DEATHKNIGHT"] = {
@@ -784,19 +725,19 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
 
-			--Unholy Force/Unheilige Kraft
+			-- Unholy Force/Unheilige Kraft
 			{ spellID = 67383, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			--Desolation/Verw�stung
+			-- Desolation/Verwüstung
 			--{ spellID = 66817, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			--Unholy Strength/Unheilige St�rke
+			-- Unholy Strength/Unheilige Stärke
 			{ spellID = 53365, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			--Unholy Might/Unheilige Macht
+			-- Unholy Might/Unheilige Macht
 			{ spellID = 67117, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			--Dancing Rune Weapon/Tanzende Runenwaffe
+			-- Dancing Rune Weapon/Tanzende Runenwaffe
 			{ spellID = 49028, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Killing machine 
+			-- Killing machine
 			{ spellID = 51124, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Freezing fog 
+			-- Freezing fog
 			{ spellID = 59052, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
@@ -805,15 +746,15 @@ Filger_Spells = {
 			Interval = 4,
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
-			
-			--Blood Plague/Blutseuche
+
+			-- Blood Plague/Blutseuche
 			{ spellID = 59879, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			--Frost Fever/Frostfieber
+			-- Frost Fever/Frostfieber
 			{ spellID = 59921, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			--Unholy Blight/Unheilige Verseuchung
+			-- Unholy Blight/Unheilige Verseuchung
 			{ spellID = 49194, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			--Summon Gargoyle/Gargoyle beschw�ren
+			-- Summon Gargoyle/Gargoyle beschwören
 			{ spellID = 49206, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 		},
-	},
+	},	
 }
