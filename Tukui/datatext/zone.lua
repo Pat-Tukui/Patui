@@ -12,9 +12,9 @@ if not TukuiCF["datatext"].zone == nil or TukuiCF["datatext"].zone > 0 then
 	  int = int - t
 	  if int < 0 then
 		 if GetMinimapZoneText() == "Putricide's Laboratory of Alchemical Horrors and Fun" then
-			Text:SetText("Putricides's Laboratory")
+			Text:SetText(hexa.."Putricides's Laboratory"..hexb)
 		 else
-			Text:SetText(GetMinimapZoneText())
+			Text:SetText(hexa..GetMinimapZoneText()..hexb)
 		 end
 		 int = 1
 	  end     

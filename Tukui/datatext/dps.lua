@@ -70,9 +70,9 @@ if TukuiCF["datatext"].dps_text and TukuiCF["datatext"].dps_text > 0 then
      
 	function getDPS()
 		if (dmg_total == 0) then
-			return ("0.0 " .. tukuilocal.datatext_dps)
+			return ("0.0 " ..hexa..tukuilocal.datatext_dps..hexb)
 		else
-			return string.format("%.1f " .. tukuilocal.datatext_dps, (dmg_total or 0) / (cmbt_time or 1))
+			return string.format("%.1f " ..hexa..tukuilocal.datatext_dps..hexb, (dmg_total or 0) / (cmbt_time or 1))
 		end
 	end
 

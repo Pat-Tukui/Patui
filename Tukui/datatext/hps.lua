@@ -75,9 +75,9 @@ if TukuiCF["datatext"].hps_text and TukuiCF["datatext"].hps_text > 0 then
  
 	function get_hps()
 		if (actual_heals_total == 0) then
-			return ("0.0 " .. tukuilocal.datatext_hps)
+			return ("0.0 " ..hexa..tukuilocal.datatext_hps..hexb)
 		else
-			return string.format("%.1f " .. tukuilocal.datatext_hps, (actual_heals_total or 0) / (cmbt_time or 1))
+			return string.format("%.1f " ..hexa..tukuilocal.datatext_hps..hexb, (actual_heals_total or 0) / (cmbt_time or 1))
 		end
 	end
 

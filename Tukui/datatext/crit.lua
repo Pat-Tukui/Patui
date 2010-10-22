@@ -26,7 +26,7 @@ if TukuiCF["datatext"].crit and TukuiCF["datatext"].crit > 0 then
 			CritChance = meleecrit
 		end
 		if int < 0 then
-			Text:SetText(format("%.2f", CritChance) .. "%"..tukuilocal.datatext_playercrit)
+			Text:SetText(format("%.2f", CritChance) .. "%"..hexa..tukuilocal.datatext_playercrit..hexb)
 			int = 1
 		end     
 	end

@@ -14,7 +14,7 @@ if TukuiCF["datatext"].armor and TukuiCF["datatext"].armor > 0 then
 
 	local function Update(self)
 		baseArmor , effectiveArmor, armor, posBuff, negBuff = UnitArmor("player");
-		Text:SetText((effectiveArmor).." "..tukuilocal.datatext_armor)
+		Text:SetText((effectiveArmor).." "..hexa..tukuilocal.datatext_armor..hexb)
 		--Setup Armor Tooltip
 		self:SetAllPoints(Text)
 	end

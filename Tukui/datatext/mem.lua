@@ -69,7 +69,7 @@ if TukuiCF["datatext"].mem and TukuiCF["datatext"].mem > 0 then
 			int = 10
 		end
 		if int2 < 0 then
-			Text:SetText(MEMORY_TEXT)
+			Text:SetText(hexa..MEMORY_TEXT..hexb)
 			int2 = 1
 		end
 	end

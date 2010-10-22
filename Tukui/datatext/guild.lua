@@ -28,9 +28,9 @@ if TukuiCF["datatext"].guild and TukuiCF["datatext"].guild > 0 then
 				end
 			end 			
 			self:SetAllPoints(Text)
-			Text:SetText(tukuilocal.datatext_guild .. ": " .. numOnline)
+			Text:SetText(hexa..tukuilocal.datatext_guild..hexb.. ": " .. numOnline)
 		else
-			Text:SetText(tukuilocal.datatext_noguild)
+			Text:SetText(hexa..tukuilocal.datatext_noguild..hexb)
 		end
 	end
 	

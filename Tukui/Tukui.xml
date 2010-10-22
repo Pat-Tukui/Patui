@@ -61,6 +61,7 @@
 	<Script file="scripts\minimap.lua"/>
 	<Script file="scripts\panels.lua"/>
 	
+	<Script file="datatext\colors.lua"/>
 	<Script file="datatext\armor.lua"/>
 	<Script file="datatext\avoidance.lua"/>
 	<Script file="datatext\bags.lua"/>

@@ -45,7 +45,7 @@ if TukuiCF["datatext"].power and TukuiCF["datatext"].power > 0 then
 			tp_pwr = tukuilocal.datatext_playersp
 		end
 		if int < 0 then
-			Text:SetText(pwr.." ".. tp_pwr)      
+			Text:SetText(pwr.." "..hexa..tp_pwr..hexb)      
 			int = 1
 		end
 	end
