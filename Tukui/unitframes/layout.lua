@@ -42,18 +42,9 @@ local function Shared(self, unit)
 	if (unit == "player" or unit == "target") then
 		-- create a panel
 		local panel = CreateFrame("Frame", nil, self)
-		TukuiDB.CreatePanel(panel, 190, 20, "BOTTOM", self, "BOTTOM", 0, -22)
+		TukuiDB.CreatePanel(panel, 186, 25, "BOTTOM", self, "TOP", 0, 4)
 		panel:SetFrameLevel(2)
-		panel:SetFrameStrata("MEDIUM")
-		panel:SetBackdropBorderColor(unpack(TukuiCF["media"].altbordercolor))
-		panel:SetAlpha(0)
-		self.panel = panel
-		
-		-- create a panel
-		local panel = CreateFrame("Frame", nil, self)
-		TukuiDB.CreatePanel(panel, 186, 21, "BOTTOM", self, "BOTTOM", 0, -8)
-		panel:SetFrameLevel(2)
-		panel:SetFrameStrata("MEDIUM")
+		panel:SetFrameStrata("LOW")
 		panel:SetBackdropBorderColor(unpack(TukuiCF["media"].altbordercolor))
 		panel:SetAlpha(0)
 		self.panel = panel
@@ -272,6 +263,7 @@ local function Shared(self, unit)
 				Resting:SetTexCoord(0, 0.5, 0, 0.421875)
 				self.Resting = Resting
 				self.Experience = Experience
+				
 			end
 			
 			-- reputation bar for max level character
