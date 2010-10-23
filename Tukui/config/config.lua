@@ -70,7 +70,7 @@ TukuiCF["arena"] = {
 
 TukuiCF["actionbar"] = {
 	["enable"] = true,                     -- enable tukz action bars
-	["hotkey"] = false,                     -- enable hotkey display because it was a lot requested
+	["hotkey"] = true,                     -- enable hotkey display because it was a lot requested
 	["hideshapeshift"] = false,            -- hide shapeshift or totembar because it was a lot requested.
 	["bottomrows"] = 2,                    -- numbers of row you want to show at the bottom (select between 1 and 2 only)
 	["rightbars"] = 1,                     -- numbers of right bar you want
@@ -125,7 +125,7 @@ TukuiCF["datatext"] = {
 	["zone"] = 5,                          -- shows your location
 	["currency"] = 10,                     -- show your tracked currency on panels
  
-	["battleground"] = false,              -- enable 3 stats in battleground only that replace stat1,stat2,stat3.
+	["battleground"] = true,              -- enable 3 stats in battleground only that replace stat1,stat2,stat3.
 	["time24"] = false,                    -- set time to 24h format.
 	["localtime"] = true,                  -- set time to local time instead of server time.
 	["fontsize"] = 12,                     -- font size for panels.

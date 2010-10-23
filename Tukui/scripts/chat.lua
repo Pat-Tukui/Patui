@@ -358,7 +358,7 @@ function TukuiDB.ChatCopyButtons()
 		TukuiDB.SetTemplate(button)
 		
 		local buttontext = button:CreateFontString(nil,"OVERLAY",nil)
-		buttontext:SetFont(TukuiCF.media.font,12,"OUTLINE")
+		buttontext:SetFont(TukuiCF.media.font,12,"THICKOUTLINE")
 		buttontext:SetText("C")
 		buttontext:SetPoint("CENTER", TukuiDB.Scale(1), 0)
 		buttontext:SetJustifyH("CENTER")

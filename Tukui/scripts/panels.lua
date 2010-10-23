@@ -4,9 +4,10 @@ TukuiDB.buttonspacing = TukuiDB.Scale(4)
 TukuiDB.petbuttonsize = TukuiDB.Scale(29)
 TukuiDB.petbuttonspacing = TukuiDB.Scale(4)
 
--- set left and right info panel width
+-- set left info panel width
 TukuiCF["panels"] = {["tinfowidth"] = 370}
 
+-- bar BG
 local barbg = CreateFrame("Frame", "TukuiActionBarBackground", UIParent)
 TukuiDB.CreatePanel(barbg, 1, 1, "BOTTOM", UIParent, "BOTTOM", 0, TukuiDB.Scale(25))
 barbg:SetWidth((TukuiDB.buttonsize * 12) + (TukuiDB.buttonspacing * 13))
@@ -106,12 +107,13 @@ if TukuiCF["actionbar"].splitbar == true and TukuiCF["actionbar"].bottomrows == 
 end
 
 if TukuiCF["actionbar"].splitbar == true then
-    -- panels under splitbars
+    -- Right Split Panel
     local rightbar = CreateFrame("Frame", "RightSplitUnderPanel", UIParent)
     TukuiDB.CreatePanel(rightbar, TukuiSplitActionBarRightBackground:GetWidth(), 19, "TOP", TukuiSplitActionBarRightBackground, "BOTTOM", 0, -3)
     rightbar:SetFrameLevel(2)
     rightbar:SetFrameStrata("BACKGROUND")
-
+     
+	-- Left Split Panel
     local leftbar = CreateFrame("Frame", "LeftSplitUnderPanel", UIParent)
     TukuiDB.CreatePanel(leftbar, TukuiSplitActionBarLeftBackground:GetWidth(), 19, "TOP", TukuiSplitActionBarLeftBackground, "BOTTOM", 0, -3)
     leftbar:SetFrameLevel(2)

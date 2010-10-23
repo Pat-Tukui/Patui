@@ -54,12 +54,12 @@ MiniMapWorldMapButton:Hide()
 -- shitty 3.3 flag to move
 MiniMapInstanceDifficulty:ClearAllPoints()
 MiniMapInstanceDifficulty:SetParent(Minimap)
-MiniMapInstanceDifficulty:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 0, 0)
+MiniMapInstanceDifficulty:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", 0, 0)
 
 -- shitty 4.0.1 flag to move
 GuildInstanceDifficulty:ClearAllPoints()
 GuildInstanceDifficulty:SetParent(Minimap)
-GuildInstanceDifficulty:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 0, 0)
+GuildInstanceDifficulty:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", 0, 0)
 
 local function UpdateLFG()
 	MiniMapLFGFrame:ClearAllPoints()
