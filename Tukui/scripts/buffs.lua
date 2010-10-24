@@ -1,9 +1,3 @@
-ConsolidatedBuffs:ClearAllPoints()
-ConsolidatedBuffs:SetPoint("LEFT", Minimap, "LEFT", TukuiDB.Scale(0), TukuiDB.Scale(0))
-ConsolidatedBuffs:SetSize(16, 16)
-ConsolidatedBuffsIcon:SetTexture(nil)
-ConsolidatedBuffs.SetPoint = TukuiDB.dummy
-
 if TukuiCF.unitframes.playerauras == true then return end
 
 local mainhand, _, _, offhand = GetWeaponEnchantInfo()
@@ -13,15 +7,17 @@ TemporaryEnchantFrame:ClearAllPoints()
 TemporaryEnchantFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", 0, TukuiDB.Scale(-16))
 TemporaryEnchantFrame.SetPoint = TukuiDB.dummy
 
+ConsolidatedBuffs:ClearAllPoints()
+ConsolidatedBuffs:SetPoint("BOTTOMLEFT", Minimap, "BOTTOMLEFT", TukuiDB.Scale(-12), TukuiDB.Scale(7))
+ConsolidatedBuffsIcon:SetAlpha(0)
+ConsolidatedBuffs.SetPoint = TukuiDB.dummy
+
 TempEnchant1:ClearAllPoints()
 TempEnchant2:ClearAllPoints()
-TempEnchant1:SetPoint("TOPRIGHT", UIParent, TukuiDB.Scale(-184), TukuiDB.Scale(-22))
+TempEnchant1:SetPoint("TOPRIGHT", UIParent, TukuiDB.Scale(-10), TukuiDB.Scale(-10))
 TempEnchant2:SetPoint("RIGHT", TempEnchant1, "LEFT", TukuiDB.Scale(-4), 0)
 
-WorldStateAlwaysUpFrame:SetFrameStrata("BACKGROUND")
-WorldStateAlwaysUpFrame:SetFrameLevel(0)
-
-for i = 1, 3 do
+for i = 1, 2 do
 	local f = CreateFrame("Frame", nil, _G["TempEnchant"..i])
 	TukuiDB.CreatePanel(f, 30, 30, "CENTER", _G["TempEnchant"..i], "CENTER", 0, 0)	
 	_G["TempEnchant"..i.."Border"]:Hide()
@@ -73,19 +69,6 @@ local function UpdateBuffAnchors()
 		local buff = _G[buttonName..index]
 		StyleBuffs(buttonName, index, false)
 		
-		-- Leaving this here just in case someone want to use it
-		-- This enable buff border coloring according to Type
-		--[[
-		local dtype = select(5, UnitBuff("player",index))		
-		local color
-		if (dtype ~= nil) then
-			color = DebuffTypeColor[dtype]
-		else
-			color = DebuffTypeColor["none"]
-		end
-		_G[buttonName..index.."Panel"]:SetBackdropBorderColor(color.r * 0.6, color.g * 0.6, color.b * 0.6)
-		--]]
-		
 		if ( buff.consolidated ) then
 			if ( buff.parent == BuffFrame ) then
 				buff:SetParent(ConsolidatedBuffsContainer)
@@ -103,16 +86,14 @@ local function UpdateBuffAnchors()
 				end
 				aboveBuff = buff;
 			elseif ( index == 1 ) then
-				local mainhand, _, _, offhand, _, _, hand3 = GetWeaponEnchantInfo()
-					if (mainhand and offhand and hand3) and not UnitHasVehicleUI("player") then
-						buff:SetPoint("RIGHT", TempEnchant3, "LEFT", TukuiDB.Scale(-4), 0)
-					elseif ((mainhand and offhand) or (mainhand and hand3) or (offhand and hand3)) and not UnitHasVehicleUI("player") then
-						buff:SetPoint("RIGHT", TempEnchant2, "LEFT", TukuiDB.Scale(-4), 0)
-					elseif ((mainhand and not offhand and not hand3) or (offhand and not mainhand and not hand3) or (hand3 and not mainhand and not offhand)) and not UnitHasVehicleUI("player") then
-						buff:SetPoint("RIGHT", TempEnchant1, "LEFT", TukuiDB.Scale(-4), 0)
-					else
-						buff:SetPoint("TOPRIGHT", UIParent, TukuiDB.Scale(-10), TukuiDB.Scale(-10))
-					end
+				local mainhand, _, _, offhand = GetWeaponEnchantInfo()
+				if mainhand and offhand and not UnitHasVehicleUI("player") then
+					buff:SetPoint("RIGHT", TempEnchant2, "LEFT", TukuiDB.Scale(-4), 0)
+				elseif ((mainhand and not offhand) or (offhand and not mainhand)) and not UnitHasVehicleUI("player") then
+					buff:SetPoint("RIGHT", TempEnchant1, "LEFT", TukuiDB.Scale(-4), 0)
+				else
+					buff:SetPoint("TOPRIGHT", UIParent, TukuiDB.Scale(-10), TukuiDB.Scale(-10))
+				end
 			else
 				buff:SetPoint("RIGHT", previousBuff, "LEFT", TukuiDB.Scale(-4), 0)
 			end
