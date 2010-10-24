@@ -111,7 +111,7 @@ local function UpdateBuffAnchors()
 					elseif ((mainhand and not offhand and not hand3) or (offhand and not mainhand and not hand3) or (hand3 and not mainhand and not offhand)) and not UnitHasVehicleUI("player") then
 						buff:SetPoint("RIGHT", TempEnchant1, "LEFT", TukuiDB.Scale(-4), 0)
 					else
-						buff:SetPoint("TOPRIGHT", UIParent, TukuiDB.Scale(-184), TukuiDB.Scale(-22))
+						buff:SetPoint("TOPRIGHT", UIParent, TukuiDB.Scale(-10), TukuiDB.Scale(-10))
 					end
 			else
 				buff:SetPoint("RIGHT", previousBuff, "LEFT", TukuiDB.Scale(-4), 0)
