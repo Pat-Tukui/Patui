@@ -24,7 +24,7 @@ local function setup()
 	elseif TukuiCF.actionbar.rightbars == 2 then
 		TukuiWatchFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", TukuiDB.Scale(-140), TukuiDB.Scale(-300))
 	elseif TukuiCF.actionbar.rightbars == 1 then
-		TukuiWatchFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", TukuiDB.Scale(-100), TukuiDB.Scale(-300))
+		TukuiWatchFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", TukuiDB.Scale(-150), TukuiDB.Scale(-330))
 	else
 		TukuiWatchFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", TukuiDB.Scale(-30), TukuiDB.Scale(-300))
 	end
