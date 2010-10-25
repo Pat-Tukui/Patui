@@ -28,7 +28,7 @@ TukuiCF["unitframes"] = {
 	["charportrait"] = true,               -- do i really need to explain this?
 	-- NOT DONE YET ["maintank"] = false,  -- enable maintank
 	-- NOT DONE YET ["mainassist"] = false,-- enable mainassist
-	["unicolor"] = true,                  -- enable unicolor theme
+	["unicolor"] = false,                  -- enable unicolor theme
 	["combatfeedback"] = true,             -- enable combattext on player and target.
 	["playeraggro"] = true,                -- color player border to red if you have aggro on current target.
 	["positionbychar"] = true,             -- save X, Y position with /uf (movable frame) per character instead of per account.
@@ -50,8 +50,8 @@ TukuiCF["unitframes"] = {
 
 	-- priest only plugin
 	["ws_show_time"] = false,              -- show time on weakened soul bar
-	["ws_show_player"] = true,             -- show weakened soul bar on player unit
-	["ws_show_target"] = true,             -- show weakened soul bar on target unit
+	["ws_show_player"] = false,             -- show weakened soul bar on player unit
+	["ws_show_target"] = false,             -- show weakened soul bar on target unit
 	
 	-- death knight only plugin
 	["runebar"] = true,                    -- enable tukui runebar plugin
@@ -163,7 +163,7 @@ TukuiCF["invite"] = {
 
 TukuiCF["buffreminder"] = {
 	["enable"] = false,                    -- this is now the new innerfire warning script for all armor/aspect class.
-	["sound"] = true,                      -- enable warning sound notification for reminder.
+	["sound"] = false,                      -- enable warning sound notification for reminder.
 }
 
 TukuiCF["others"] = {
@@ -188,12 +188,11 @@ end
 -- Name need to be case sensitive
 ----------------------------------------------------------------------------
 
-if TukuiDB.myname == "Tukz" then
+if TukuiDB.myname == "Patlulz" then
 	-- yeah my default config is not really like default tukui.
-	TukuiCF.actionbar.rightbars = 0
-	TukuiCF.actionbar.bottomrows = 1
-	TukuiCF.actionbar.hotkey = false
-	TukuiCF.actionbar.hideshapeshift = true
-	TukuiCF.others.pvpautorelease = true
-	TukuiCF.unitframes.enemyhcolor = true
+	TukuiCF.layout.healer = true
+	TukuiCF.datatext.currency = 0
+	TukuiCF.datatext.armor = 0
+	TukuiCF.datatext.hps_text = 10
+	TukuiCF.datatext.haste = 9
 end

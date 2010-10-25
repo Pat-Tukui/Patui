@@ -169,7 +169,7 @@ local function Shared(self, unit)
 			local Combat = health:CreateTexture(nil, "OVERLAY")
 			Combat:SetHeight(TukuiDB.Scale(19))
 			Combat:SetWidth(TukuiDB.Scale(19))
-			Combat:SetPoint("TOP",2,3)
+			Combat:SetPoint("CENTER",2,3)
 			Combat:SetVertexColor(0.69, 0.31, 0.31)
 			self.Combat = Combat
 
@@ -465,9 +465,9 @@ local function Shared(self, unit)
 			local Name = health:CreateFontString(nil, "OVERLAY")
 			Name:SetPoint("LEFT", health, "LEFT", TukuiDB.Scale(4), 0)
 			Name:SetJustifyH("LEFT")
-			Name:SetFont(font1, 12)
+			Name:SetFont(font1, 12, "OUTLINE")
 
-			self:Tag(Name, '[Tukui:getnamecolor][Tukui:namelong] [Tukui:diffcolor][level] [shortclassification]')
+			self:Tag(Name, '[Tukui:namelong] [Tukui:diffcolor] [level]')
 			self.Name = Name
 		end
 
@@ -696,12 +696,12 @@ local function Shared(self, unit)
 		-- Unit name
 		local Name = health:CreateFontString(nil, "OVERLAY")
 		Name:SetPoint("CENTER", health, "CENTER", 0, 0)
-		Name:SetFont(font1, 12)
+		Name:SetFont(font1, 12, "OUTLINE")
 		Name:SetJustifyH("CENTER")
 		Name:SetShadowColor(0, 0, 0)
 		Name:SetShadowOffset(1.25, -1.25)
 
-		self:Tag(Name, '[Tukui:getnamecolor][Tukui:namemedium]')
+		self:Tag(Name, '[Tukui:namemedium]')
 		self.Name = Name
 	end
 	
@@ -783,7 +783,7 @@ local function Shared(self, unit)
 		-- Unit name
 		local Name = health:CreateFontString(nil, "OVERLAY")
 		Name:SetPoint("CENTER", self, "CENTER", 0, TukuiDB.Scale(1))
-		Name:SetFont(font1, 12)
+		Name:SetFont(font1, 12, "OUTLINE")
 		Name:SetJustifyH("CENTER")
 		Name:SetShadowColor(0, 0, 0)
 		Name:SetShadowOffset(1.25, -1.25)

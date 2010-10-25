@@ -29,15 +29,15 @@ if TukuiCF["datatext"].wowtime and TukuiCF["datatext"].wowtime > 0 then
 			else
 				if Hr24>=12 then
 					if pendingCalendarInvites > 0 then
-						Text:SetText("|cffFF0000"..Hr..":"..Min.." |cffffffffpm|r")
+						Text:SetText("|cffFF0000"..Hr..":"..Min.." |cffffffffPM|r")
 					else
-						Text:SetText(Hr..":"..Min.." |cffffffffpm|r")
+						Text:SetText(Hr..":"..Min..hexa.." PM"..hexb) -- Text:SetText(Hr..":"..Min.." |cffffffffPM|r")
 					end
 				else
 					if pendingCalendarInvites > 0 then
-						Text:SetText("|cffFF0000"..Hr..":"..Min.." |cffffffffam|r")
+						Text:SetText("|cffFF0000"..Hr..":"..Min.." |cffffffffAM|r")
 					else
-						Text:SetText(Hr..":"..Min.." |cffffffffam|r")
+						Text:SetText(Hr..":"..Min..hexa.." AM"..hexb) -- Text:SetText(Hr..":"..Min.." |cffffffffAM|r")
 					end
 				end
 			end
@@ -54,16 +54,16 @@ if TukuiCF["datatext"].wowtime and TukuiCF["datatext"].wowtime > 0 then
 				if Hr>=12 then
 					if Hr>12 then Hr = Hr-12 end
 					if pendingCalendarInvites > 0 then
-						Text:SetText("|cffFF0000"..Hr..":"..Min.." |cffffffffpm|r")
+						Text:SetText("|cffFF0000"..Hr..":"..Min.." |cffffffffPM|r")
 					else
-						Text:SetText(Hr..":"..Min.." |cffffffffpm|r")
+						Text:SetText(Hr..":"..Min..hexa.." PM"..hexb) -- Text:SetText(Hr..":"..Min.." |cffffffffPM|r")
 					end
 				else
 					if Hr == 0 then Hr = 12 end
 					if pendingCalendarInvites > 0 then
-						Text:SetText("|cffFF0000"..Hr..":"..Min.." |cffffffffam|r")
+						Text:SetText("|cffFF0000"..Hr..":"..Min.." |cffffffffAM|r")
 					else
-						Text:SetText(Hr..":"..Min.." |cffffffffam|r")
+						Text:SetText(Hr..":"..Min..hexa.." AM"..hexb) -- Text:SetText(Hr..":"..Min.." |cffffffffAM|r")
 					end
 				end
 			end
