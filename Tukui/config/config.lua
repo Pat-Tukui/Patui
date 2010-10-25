@@ -76,6 +76,7 @@ TukuiCF["actionbar"] = {
 	["rightbars"] = 1,                     -- numbers of right bar you want
 	["showgrid"] = true,                   -- show grid on empty button
 	["splitbar"] = true,                   -- bar
+	["rightbarmouseover"] = true,          -- enable rightbars on mouseover
 
 }
 

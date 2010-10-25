@@ -788,7 +788,7 @@ local function Shared(self, unit)
 		Name:SetShadowColor(0, 0, 0)
 		Name:SetShadowOffset(1.25, -1.25)
 
-		self:Tag(Name, '[Tukui:getnamecolor][Tukui:namemedium] [Tukui:diffcolor][level]')
+		self:Tag(Name, '[Tukui:namemedium] [Tukui:diffcolor] [level]')
 		self.Name = Name
 		
 		-- update pet name, this should fix "UNKNOWN" pet names on pet unit.
